@@ -3,43 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kayalvizhi Sadayappan PhD | Postdoctoral Researcher</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS (optional for styling) -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto&family=Open+Sans&family=Montserrat&display=swap" rel="stylesheet">
+
+    <style>
+        /* General page styling */
+        body {
+            margin: 0;
+            padding: 0.5rem 0.5in 0.5rem 0.5in; /* 1 inch border */
+            font-family: 'Open Sans', sans-serif; /* default content font */
+            background-color: #fdfdfd;
+        }
+
+        /* Title styling */
+        h1, h2 {
+            font-family: 'Libre Baskerville', serif;
+            color: #333;
+        }
+        /* Remove extra space above h1 */
+        h1 {
+            margin-top: 0;
+            margin-bottom: 0.3rem; /* small spacing below h1 */
+        }
+        h2 {
+            margin-top: 1rem;
+            margin-bottom: 1rem; /* spacing before tabs */
+            font-weight: normal;
+            font-size: 1.2rem;
+        }
+        /* Main tabs */
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            font-family: 'Avenir', sans-serif; /* tab font option */
+            font-weight: bold;
+            margin-right: 5px;
+            border-radius: 5px 5px 0 0;
+            background-color: #eee;
+        }
+
+        .tab.active {
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-bottom: none;
+        }
+
+        /* Content sections */
+        .content {
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        /* Projects section links */
+    #projects ul {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    #projects ul li:not(:last-child)::after {
+        content: "|";
+        margin: 0 15px;
+        color: #969696; /* match link color */
+    }
+
+    #projects ul li a {
+        text-decoration: none;
+        color: #969696;
+        font-weight: normal;
+        cursor: pointer;
+    }
+
+    #projects ul li a.active {
+        font-weight: bold;
+        color: #333;
+    }
+
+
+
+        /* Individual project sections */
+        .project {
+            display: block;
+            margin-top: 20px;
+        }
+        .project p {
+            white-space: pre-line;
+        }
+
+    </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <h1>Kayalvizhi Sadayappan</h1>
-        <h2>Postdoctoral Researcher</h2>
-        <p>Welcome to my personal website</p>
-    </header>
 
-    <!-- About Section -->
-    <section id="about">
-        <h3>About Me</h3>
-        <p>I'm Kayalvizhi Sadayappan but you can call me Kayal. I am a postdoctoral researcher at Penn State University. I am passionate about water. My research primarily focuses on 
-          water chemistry and quality, exploring their patterns and processes that influence them from catchment to global scale.</p>
-    </section>
+    <h1>Kayal (Kayalvizhi) Sadayappan PhD</h1>
+    <h2>Environmental Engineer | Data Scientist | Water Resources Specialist | Environmental Modeler</h2>
 
-    <!-- Research Section -->
-    <section id="research">
-        <h3>Research</h3>
-        <ul>
-            <li><strong>Research Focus 1:</strong> Description or project link</li>
-            <li><strong>Research Focus 2:</strong> Description or project link</li>
-            <li><strong>Research Focus 3:</strong> Description or project link</li>
-        </ul>
-    </section>
+    <!-- Main Tabs -->
+    <div class="tabs">
+        <div class="tab active" onclick="showTab('about')">About Me</div>
+        <div class="tab" onclick="showTab('publications')">Publications</div>
+        <div class="tab" onclick="showTab('contact')">Contact</div>
+    </div>
+
+    <!-- About Me Section -->
+    <div id="about" class="content active">
+        <h2>About Me</h2>
+        <p>Hi, I'm Kayal, an environmental engineer passionate about water systems.
+          I apply my expertise in data analytics and predictive modeling - both process-based
+          and AI-driven - to uncover patterns and processes driving water quality and quantity and communicate
+          the complex findings effectively to diverse audiences. I believe that leveraging
+          the growing streams of large-scale environmental data is essential to
+          ensure a reliable water supply. My goal is to translate data into actionable
+          insights that informs decisions and support sustainability.</p>
+        <h2>Education</h2>
+        <p>PhD in Environmental Engineering and biogeochemistry - Pennsylvania State University, USA - 2024 <p>
+        <p>M.Tech in Civil Engineering - Indian Institute of Science, India - 2018 <p>
+        <p>B.Tech in Energy and Environmental Engineering - Tamil Nadu Agricultural University, India - 2015 <p>
+
+    </div>
+
+
+    <!-- Publications Section -->
+    <div id="publications" class="content">
+        <h2>Publications</h2>
+        <p>
+        <a href="https://scholar.google.com/citations?user=Vvbw-MsAAAAJ&hl=en"
+           target="_blank"
+           rel="noopener noreferrer">
+           Google Scholar
+        </a>
+    </p>
+        <p>Sadayappan, K., Jarecke, K.M., Keen, R.M., Puthalalth, S., Dodds, W.K., Kirk, M.F., Sullivan, P.L., Nippert, J.B., Seybold, E.C. and Li, L. (2026)
+          Flow or No‐Flow: Does Discharge Regulate Water Chemistry in Intermittent Streams?. Water Resources Research, 62(1), p.e2025WR040321.
+          <a href ="https://doi.org/10.1029/2025WR040321" target="_blank" rel="noopener noreferrer"> DOI:10.1029/2025WR040321</a><p>
+        <p>Sadayappan, K., Li, L. (2025) Riverine heatwaves on the rise, outpacing air heatwaves.
+          Proceedings of the National Academy of Sciences 122(39), e2503160122.
+          <a href ="https://doi.org/10.1073/pnas.2503160122" target="_blank" rel="noopener noreferrer"> DOI:10.1073/pnas.2503160122</a><p>
+        <p>Sadayappan, K., Stewart, B., Kerins, D., Vierbicher, A., Zhi, W., Smykalov, V., Shi, Y.,
+           Vis, M., Seibert, J., Li, L. (2024) BioRT-HBV v1.0: a biogeochemical reactive transport model at the watershed scale.
+           Journal of Advances in Modeling Earth Systems 16(12), e2024MS004217.
+           <a href ="https://doi.org/10.1029/2024MS004217" target="_blank" rel="noopener noreferrer"> DOI:10.1029/2024MS004217</a><p>
+        <p>Sadayappan, K., Keen, R.M., Jarecke, K.M., Moreno, V., Nippert, J.B., Kirk, M. F., Sullivan, P.L., Li, L. (2023) Drier streams despite a wetter climate in woody-encroached grasslands.
+          Journal of Hydrology 627, 130388.<a href ="https://doi.org/10.1016/j.jhydrol.2023.130388" target="_blank" rel="noopener noreferrer"> DOI:10.1016/j.jhydrol.2023.130388</a><p>
+        <p>Sadayappan, K., Kerins, D., Shen, C.P., Li, L. (2022) Nitrate concentrations predominantly driven by human,
+           climate, and soil properties in US rivers. Water Research 226, 119295.
+           <a href ="https://doi.org/10.1016/j.watres.2022.119295" target="_blank" rel="noopener noreferrer"> DOI:10.1016/j.watres.2022.119295</a><p>
+</p>
+    </div>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h3>Contact</h3>
-        <p>Feel free to reach out via email: <a href="mailto:kayalvizhisadayappan@gmail.com">kayalvizhisadayappan@gmail.com</a></p>
-    </section>
+    <div id="contact" class="content">
+        <h2>Contact</h2>
+        <p>Interested in connecting? Please feel free to contact me via email or LinkedIn</p>
+        <p>Email:   <a href="mailto:kayalvizhisadayappan@gmail.com">
+          kayalvizhisadayappan@gmail.com </a> |
+        <a href="https://www.linkedin.com/in/kayal-sadayappan-056856153/"
+           target="_blank"
+           rel="noopener noreferrer"> LinkedIn </p>
+    </div>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 Kayalvizhi Sadayappan All Rights Reserved.</p>
-    </footer>
+    <script>
+        // Main tab switching
+        function showTab(tabId) {
+            const tabs = document.querySelectorAll('.tab');
+            const contents = document.querySelectorAll('.content');
+
+            tabs.forEach(tab => tab.classList.remove('active'));
+            contents.forEach(content => content.classList.remove('active'));
+
+            document.querySelector(`.tab[onclick="showTab('${tabId}')"]`).classList.add('active');
+            document.getElementById(tabId).classList.add('active');
+
+            // If projects tab is clicked, activate first project
+            if(tabId === 'projects') {
+                showProject('project1');
+            }
+        }
+
+
+
+    </script>
+
 </body>
 </html>
