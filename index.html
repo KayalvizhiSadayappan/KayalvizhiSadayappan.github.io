@@ -11,7 +11,7 @@
         /* General page styling */
         body {
             margin: 0;
-            padding: 0.5rem 0.5in 0.5rem 0.5in; /* 1 inch border */
+            padding: 0.2rem 0.5in 0.2rem 0.5in; /* 1 inch border */
             font-family: 'Open Sans', sans-serif; /* default content font */
             background-color: #fdfdfd;
         }
@@ -21,6 +21,7 @@
             font-family: 'Libre Baskerville', serif;
             color: #333;
         }
+
         /* Remove extra space above h1 */
         h1 {
             margin-top: 0;
@@ -32,6 +33,7 @@
             font-weight: normal;
             font-size: 1.2rem;
         }
+
         /* Main tabs */
         .tabs {
             display: flex;
@@ -67,12 +69,30 @@
             text-align: justify;
             text-justify: inter-word;
           }
-
+          .content-section h3 {
+            font-family: 'Libre Baskerville', serif;
+            color: #616060;
+            margin-top: 0rem;
+            margin-bottom: 0rem; /* spacing before tabs */
+            font-weight: normal;
+            font-size: 1.0rem;
+            font-style: italic;
+          }
+      #publications ul li {
+              margin-bottom: 10px; /* increases space between bullet points */
+              line-height: 1.5;
+              text-align: justify;   /* optional: makes text more readable */
+          }
+      #professional ul li {
+              margin-bottom: 10px; /* increases space between bullet points */
+              line-height: 1.5;    /* optional: makes text more readable */
+              text-align: justify;
+          }
         /* Projects section links */
     #projects ul {
         list-style: none;
         padding-left: 0;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         display: flex;
         align-items: center;
     }
@@ -117,6 +137,7 @@
     <div class="tabs">
         <div class="tab active" onclick="showTab('about')">About Me</div>
         <div class="tab" onclick="showTab('publications')">Publications</div>
+        <div class="tab" onclick="showTab('professional')">Professional Impact</div>
         <div class="tab" onclick="showTab('contact')">Contact</div>
     </div>
 
@@ -127,17 +148,52 @@
           I apply expertise in data analytics and predictive modeling - both process-based
           and AI-driven - to uncover patterns and processes driving water quality and quantity,
           and communicate the findings effectively to diverse technical and non-technical audiences. </p>
-        </p> I believe that leveraging
-          the growing streams of large-scale environmental data is essential to
-          ensure a reliable water supply. My goal is to translate data into actionable
+        <p> I believe that leveraging the growing streams of large-scale environmental data is essential to
+          ensure a reliable and safe water supply. My goal is to translate data into actionable
           insights that inform decisions and support sustainability.</p>
         <h2>Education</h2>
-        <p>PhD in Environmental Engineering and biogeochemistry - Pennsylvania State University, USA - 2024 <p>
-        <p>M.Tech in Civil Engineering - Indian Institute of Science, India - 2018 <p>
-        <p>B.Tech in Energy and Environmental Engineering - Tamil Nadu Agricultural University, India - 2015 <p>
+        <p>PhD in Environmental Engineering and Biogeochemistry - Pennsylvania State University, USA - 2024 </p>
+        <p>M.Tech in Civil Engineering - Indian Institute of Science, India - 2018 </p>
+        <p>B.Tech in Energy and Environmental Engineering - Tamil Nadu Agricultural University, India - 2015 </p>
 
     </div>
 
+    <!-- Professional Impact Section -->
+    <div id="professional" class="content content-section">
+        <h2>Professional Impact</h2>
+        <h3 class="subheading">High-Impact Research</h3>
+        <ul>
+          <li>Led high-impact research on riverine heatwaves that achieved top-tier recognition, with an Altmetric Attention Score of 296 (top 1–2% globally) and
+          coverage in <a href ="https://pnas.altmetric.com/details/181611498/news" target="_blank" rel="noopener noreferrer"> 32 media outlets</a>,
+          demonstrating broad relevance and visibility beyond academia</li>
+        </ul>
+        <h3 class="subheading">Leadership & Mentoring</h3>
+        <ul>
+          <li>Mentored and collaborated with four graduate students on research projects, helping them develop skills in hydrological and reactive transport modeling,
+            data analysis, and deep learning</li>
+          <li>Convened and led multiple American Geophysical Union (AGU) Fall Meeting sessions on water quality and application of big data (2022-2024)</li>
+          <li>Trained early career researchers on using BioRT-HBV model at the Data-Model Integration Workshop, Colorado School of Mines (July 2024)</li>
+          <li>Mentored three undergraduate students as part of Research Experiences for Undergraduates (REU) program in Climate Science at Penn State (Summer 2020)</li>
+        </ul>
+        <h3 class="subheading">Selected Talks & Presentations</h3>
+        <ul>
+          <li>Invited presenter at AGU Fall Meeting (2025)</li>
+          <li>Selected as an early career scientist to orally present at the
+          prestigious Gordon Research Conference on Catchment Science: Interactions of Hydrology, Biology and Geochemistry (2025)</li>
+        </ul>
+        <h3 class="subheading">Awards</h3>
+        <ul>
+          <li>C. Norwood Wherry Memorial Graduate Fellowship in Engineering (2021, 2022) at Penn State</li>
+          <li>University Graduate Fellowship (2019) at Penn State</li>
+          <li>Ministry of Human Resource Development Scholarship (2016-2017) at Indian Institute of Science</li>
+        </ul>
+        <h3 class="subheading">Professional Service</h3>
+        <ul>
+          <li>Invited reviewer for journals including Water Resources Reasearch, Frontiers in Water and Hydrological Processes</li>
+          <li>Member in AGU, 2020–Present</li>
+        </ul>
+
+    </div>
 
     <!-- Publications Section -->
     <div id="publications" class="content content-section">
@@ -149,22 +205,24 @@
            Google Scholar
         </a>
     </p>
-        <p>Sadayappan, K., Jarecke, K.M., Keen, R.M., Puthalalth, S., Dodds, W.K., Kirk, M.F., Sullivan, P.L., Nippert, J.B., Seybold, E.C. and Li, L. (2026)
-          Flow or No‐Flow: Does Discharge Regulate Water Chemistry in Intermittent Streams?. Water Resources Research, 62(1), p.e2025WR040321.
-          <a href ="https://doi.org/10.1029/2025WR040321" target="_blank" rel="noopener noreferrer"> DOI:10.1029/2025WR040321</a><p>
-        <p>Sadayappan, K., Li, L. (2025) Riverine heatwaves on the rise, outpacing air heatwaves.
+        <ul>
+        <li>Sadayappan, K., Jarecke, K.M., Keen, R.M., Puthalalth, S., Dodds, W.K., Kirk, M.F., Sullivan, P.L., Nippert, J.B., Seybold, E.C. and Li, L. (2026)
+          Flow or No‐Flow: Does Discharge Regulate Water Chemistry in Intermittent Streams? Water Resources Research, 62(1), p.e2025WR040321.
+          <a href ="https://doi.org/10.1029/2025WR040321" target="_blank" rel="noopener noreferrer"> DOI:10.1029/2025WR040321</a></li>
+        <li>Sadayappan, K., Li, L. (2025) Riverine heatwaves on the rise, outpacing air heatwaves.
           Proceedings of the National Academy of Sciences 122(39), e2503160122.
-          <a href ="https://doi.org/10.1073/pnas.2503160122" target="_blank" rel="noopener noreferrer"> DOI:10.1073/pnas.2503160122</a><p>
-        <p>Sadayappan, K., Stewart, B., Kerins, D., Vierbicher, A., Zhi, W., Smykalov, V., Shi, Y.,
+          <a href ="https://doi.org/10.1073/pnas.2503160122" target="_blank" rel="noopener noreferrer"> DOI:10.1073/pnas.2503160122</a></li>
+        <li>Sadayappan, K., Stewart, B., Kerins, D., Vierbicher, A., Zhi, W., Smykalov, V., Shi, Y.,
            Vis, M., Seibert, J., Li, L. (2024) BioRT-HBV v1.0: a biogeochemical reactive transport model at the watershed scale.
            Journal of Advances in Modeling Earth Systems 16(12), e2024MS004217.
-           <a href ="https://doi.org/10.1029/2024MS004217" target="_blank" rel="noopener noreferrer"> DOI:10.1029/2024MS004217</a><p>
-        <p>Sadayappan, K., Keen, R.M., Jarecke, K.M., Moreno, V., Nippert, J.B., Kirk, M. F., Sullivan, P.L., Li, L. (2023) Drier streams despite a wetter climate in woody-encroached grasslands.
-          Journal of Hydrology 627, 130388.<a href ="https://doi.org/10.1016/j.jhydrol.2023.130388" target="_blank" rel="noopener noreferrer"> DOI:10.1016/j.jhydrol.2023.130388</a><p>
-        <p>Sadayappan, K., Kerins, D., Shen, C.P., Li, L. (2022) Nitrate concentrations predominantly driven by human,
+           <a href ="https://doi.org/10.1029/2024MS004217" target="_blank" rel="noopener noreferrer"> DOI:10.1029/2024MS004217</a></li>
+        <li>Sadayappan, K., Keen, R.M., Jarecke, K.M., Moreno, V., Nippert, J.B., Kirk, M. F., Sullivan, P.L., Li, L. (2023) Drier streams despite a wetter climate in woody-encroached grasslands.
+          Journal of Hydrology 627, 130388.<a href ="https://doi.org/10.1016/j.jhydrol.2023.130388" target="_blank" rel="noopener noreferrer"> DOI:10.1016/j.jhydrol.2023.130388</a></li>
+        <li>Sadayappan, K., Kerins, D., Shen, C.P., Li, L. (2022) Nitrate concentrations predominantly driven by human,
            climate, and soil properties in US rivers. Water Research 226, 119295.
-           <a href ="https://doi.org/10.1016/j.watres.2022.119295" target="_blank" rel="noopener noreferrer"> DOI:10.1016/j.watres.2022.119295</a><p>
-</p>
+           <a href ="https://doi.org/10.1016/j.watres.2022.119295" target="_blank" rel="noopener noreferrer"> DOI:10.1016/j.watres.2022.119295</a></li>
+        </ul>
+      </p>
     </div>
 
     <!-- Contact Section -->
